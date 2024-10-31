@@ -9,9 +9,21 @@ body {
 header {
     background-color: #b3c19e;
     color: rgb(46, 23, 2);
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    font-size: large;
 }
+
+
+footer {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
 
 nav ul {
     list-style: none;
@@ -28,17 +40,39 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 10px;
-    margin: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #89b493
 }
 
-footer {
-    background-color: transparent;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+section {
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 30px;
+    background-color: #d7e0c4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+h2 {
+    color: rgb(49, 24, 1);
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
