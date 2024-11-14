@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 
 </head>
 <body>
@@ -29,7 +31,30 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>In the future, this is a placeholder for your projects.</p>
+            <div class="gallery">
+                <div class="project" id="project1">
+                    <h3>Project 1</h3>
+                    <p class="description">Dynamic Blog Website</p>
+                    <button class="toggle-details">Show Details</button>
+                    <div class="details hidden">
+                        <p class="desc"> I built a blog website with multiple pages that lets users easily create, view, edit, and delete their posts. I used JavaScript to handle and store the post data directly in the browser, keeping it simple and accessible. For version control, I used Git, organizing each feature in its own branch to keep things manageable, and hosted everything on GitHub for easy collaboration and project tracking.
+
+                        </p> 
+                        <a href="https://mitzigarciaa.github.io/dynamic-blog-website/">Visit My Dynamic Blog Project</a>
+                    </div>
+                </div>
+                <div class="project" id="project2">
+                    <h3>Project 2</h3>
+                    <p class="description">Web Storage API</p>
+                    <button class="toggle-details">Show Details</button>
+                    <div class="details hidden">
+                        <p class="desc"> I built a simple web page where users can enter their name, save it using the HTML5 Local Storage API, and have it display again when the page is reloaded. The page includes an input field, buttons to save and clear the name, and a section to show the saved name. I used JavaScript to handle saving the name to local storage, retrieving it when the page refreshes, and clearing it when needed. The design also includes some CSS to make the page look nice and easy to use.
+
+                        </p> 
+                        <a href="https://mitzigarciaa.github.io/storage-assignment/">Visit My Web Storage Project</a>
+                
+                    </div>
+                </div>
     </section>
 
     <!-- Contact Section -->
@@ -42,5 +67,7 @@
     <footer>
         <p>&copy; 2024 Mitzi Garcia</p>
     </footer>
+
+
 </body>
 </html>
