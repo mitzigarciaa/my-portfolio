@@ -66,3 +66,4 @@ form.addEventListener('submit', function(event) {
     errorMessage.style.display = 'none';
     alert('Form submitted successfully!');
 });
+
