@@ -18,3 +18,51 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+//contact form
+
+
+const form = document.getElementById('contact-form');
+const errorMessage = document.getElementById('error-message');
+
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent the form from submitting
+
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+
+    //error message
+    errorMessage.style.display = 'none';
+
+
+    // Check if the name field is empty
+    if (!name) {
+        errorMessage.textContent = 'Please enter your name.';
+        errorMessage.style.display = 'block';
+        return;  
+    }
+
+
+    // Check if the email field is empty
+    if (!email) {
+        errorMessage.textContent = 'Please enter your email.';
+        errorMessage.style.display = 'block';
+        return;  
+    }
+
+
+    // Check if the message field is empty
+    if (!message) {
+        errorMessage.textContent = 'Please enter your message.';
+        errorMessage.style.display = 'block';
+        return;  
+    }
+
+
+    // If all fields are filled, hide the error message
+    errorMessage.style.display = 'none';
+    alert('Form submitted successfully!');
+});
