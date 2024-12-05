@@ -9,12 +9,21 @@ body {
 header {
     background-color: #b3c19e;
     color: rgb(46, 23, 2);
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    font-size: large;
-    font-family: "montserrat";
+    font-size: 1.5em;
+    font-family: "Montserrat";
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+nav {
+    background-color: #d7e0c4;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 footer {
     background-color: transparent;
@@ -59,12 +68,14 @@ section {
 
 h2 {
     color: rgb(49, 24, 1);
+    text-align: center;
 }
 
 #about h2 {
     font-size: 35px;
     margin-bottom: 20px;
     font-family: "montserrat";
+    
 }
 
 #projects h2 {
